@@ -14,6 +14,10 @@
 		D05CF1121B8594B5001D5FB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05CF1111B8594B5001D5FB2 /* Images.xcassets */; };
 		D05CF1151B8594B5001D5FB2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05CF1131B8594B5001D5FB2 /* LaunchScreen.xib */; };
 		D05CF1211B8594B5001D5FB2 /* CardGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D05CF1201B8594B5001D5FB2 /* CardGameTests.m */; };
+		D05CF12C1B8595D1001D5FB2 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = D05CF12B1B8595D1001D5FB2 /* Card.m */; };
+		D05CF12F1B85A05E001D5FB2 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = D05CF12E1B85A05E001D5FB2 /* Deck.m */; };
+		D05CF1321B86DAE5001D5FB2 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D05CF1311B86DAE5001D5FB2 /* PlayingCard.m */; };
+		D05CF1351B86E618001D5FB2 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = D05CF1341B86E618001D5FB2 /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		D05CF11A1B8594B5001D5FB2 /* CardGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05CF11F1B8594B5001D5FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D05CF1201B8594B5001D5FB2 /* CardGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardGameTests.m; sourceTree = "<group>"; };
+		D05CF12A1B8595D1001D5FB2 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		D05CF12B1B8595D1001D5FB2 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		D05CF12D1B85A05E001D5FB2 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		D05CF12E1B85A05E001D5FB2 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		D05CF1301B86DAE5001D5FB2 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		D05CF1311B86DAE5001D5FB2 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		D05CF1331B86E618001D5FB2 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		D05CF1341B86E618001D5FB2 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +101,14 @@
 				D05CF1111B8594B5001D5FB2 /* Images.xcassets */,
 				D05CF1131B8594B5001D5FB2 /* LaunchScreen.xib */,
 				D05CF1041B8594B5001D5FB2 /* Supporting Files */,
+				D05CF12A1B8595D1001D5FB2 /* Card.h */,
+				D05CF12B1B8595D1001D5FB2 /* Card.m */,
+				D05CF12D1B85A05E001D5FB2 /* Deck.h */,
+				D05CF12E1B85A05E001D5FB2 /* Deck.m */,
+				D05CF1301B86DAE5001D5FB2 /* PlayingCard.h */,
+				D05CF1311B86DAE5001D5FB2 /* PlayingCard.m */,
+				D05CF1331B86E618001D5FB2 /* PlayingCardDeck.h */,
+				D05CF1341B86E618001D5FB2 /* PlayingCardDeck.m */,
 			);
 			path = CardGame;
 			sourceTree = "<group>";
@@ -219,9 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05CF1321B86DAE5001D5FB2 /* PlayingCard.m in Sources */,
+				D05CF12F1B85A05E001D5FB2 /* Deck.m in Sources */,
 				D05CF10D1B8594B5001D5FB2 /* ViewController.m in Sources */,
 				D05CF10A1B8594B5001D5FB2 /* AppDelegate.m in Sources */,
+				D05CF1351B86E618001D5FB2 /* PlayingCardDeck.m in Sources */,
 				D05CF1071B8594B5001D5FB2 /* main.m in Sources */,
+				D05CF12C1B8595D1001D5FB2 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +440,7 @@
 				D05CF1261B8594B5001D5FB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D05CF1271B8594B5001D5FB2 /* Build configuration list for PBXNativeTarget "CardGameTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +449,7 @@
 				D05CF1291B8594B5001D5FB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
