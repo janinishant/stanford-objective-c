@@ -15,14 +15,14 @@
  * NEVER call init without wrapping it around an alloc
  * INIT ALWAYS returns self
  */
-- (instancetype) init
+- (instancetype)init
 {
     //calling parent init
     self = [super init];
-    
+
     if (self) {
         for (NSString *suit in [PlayingCard validSuits]) {
-            for (NSUInteger rank; rank <=[PlayingCard maxRank]; rank++) {
+            for (NSUInteger rank = 1; rank <=[PlayingCard maxRank]; rank++) {
                 PlayingCard *card = [[PlayingCard alloc] init];
                 card.suit = suit;
                 card.rank = rank;
@@ -30,7 +30,6 @@
             }
         }
     }
-    
     //should always return self.
     return self;
 }
