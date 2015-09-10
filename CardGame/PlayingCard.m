@@ -16,6 +16,24 @@
 //If you define both setter and getter we need to declare this
 @synthesize suit = _suit;
 
+//Overriding the parent card match
+- (int) match:(NSArray *)otherCards
+{
+    int score = 0;
+    
+    if ([otherCards count])
+    {
+        PlayingCard *otherCard = [otherCards firstObject];
+        if ([self.suit isEqualToString:otherCard.suit]) {
+            score = 1;
+        } else if (self.rank == otherCard.rank)  {
+            score = 4;
+        }
+        
+    }
+    return score;
+}
+
 //This method has + instead of - becuase its a CLASS METHOD.
 + (NSArray *)validSuits
 {
